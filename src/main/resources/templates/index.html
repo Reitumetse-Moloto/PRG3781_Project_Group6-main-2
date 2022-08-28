@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Main Page</title>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/src/main/resources/templates/indexstyle.css">
+
+    
+</head>
+<body>
+    <div class="container text-center">
+        <h1>Student Portal</h1>
+        <form class="form-signin" action="/login" method="post">
+            <h2 class="form-signin-heading">Please Login or Register</h2>
+            <button id="view"><a href="/src/main/resources/templates/students.html" th:href="/@{/users}">View Students</a></button>
+            <button id="Register"><a href="/src/main/resources/templates/signup_form.html" th:href="/@{/register}">Register</a></button>
+            <button id="Login"><a href="/src/main/resources/templates/login_form.html" th:href="/@{/login}">Login</a></button>
+        </form>
+
+    </div>
+     
+</body>
+</html>
